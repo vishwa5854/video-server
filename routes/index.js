@@ -9,7 +9,7 @@ router.get('/', function(req, res, next) {
 });
 
 router.get("/videos/:video", (request, response) => {
-    response.sendFile(path.resolve("C:\\Users\\Administrator\\Downloads\\data\\" + request.params.video));
+    response.sendFile(path.resolve("C:\\Users\\Administrator\\Downloads\\data\\" + request.params.video + ".mp4"));
     console.log("Sending the video");
 });
 
